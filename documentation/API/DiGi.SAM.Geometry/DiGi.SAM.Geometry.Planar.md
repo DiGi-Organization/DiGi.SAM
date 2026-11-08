@@ -21,7 +21,7 @@ Inheritance [System\.Object](https://learn.microsoft.com/en-us/dotnet/api/system
 Converts a [SAM\.Geometry\.Planar\.Face2D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.planar.face2d 'SAM\.Geometry\.Planar\.Face2D') instance to a [DiGi\.Geometry\.Planar\.Classes\.PolygonalFace2D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.planar.classes.polygonalface2d 'DiGi\.Geometry\.Planar\.Classes\.PolygonalFace2D')\.
 
 ```csharp
-public static DiGi.Geometry.Planar.Classes.PolygonalFace2D ToDiGi(this SAM.Geometry.Planar.Face2D face2D, double tolerance=1E-06);
+public static DiGi.Geometry.Planar.Classes.PolygonalFace2D? ToDiGi(this SAM.Geometry.Planar.Face2D? face2D, double tolerance=1E-06);
 ```
 #### Parameters
 
@@ -48,7 +48,7 @@ The converted [DiGi\.Geometry\.Planar\.Classes\.PolygonalFace2D](https://learn.m
 Converts a [SAM\.Geometry\.Planar\.Point2D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.planar.point2d 'SAM\.Geometry\.Planar\.Point2D') instance to a [DiGi\.Geometry\.Planar\.Classes\.Point2D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.planar.classes.point2d 'DiGi\.Geometry\.Planar\.Classes\.Point2D') instance\.
 
 ```csharp
-public static DiGi.Geometry.Planar.Classes.Point2D ToDiGi(this SAM.Geometry.Planar.Point2D point2D);
+public static DiGi.Geometry.Planar.Classes.Point2D? ToDiGi(this SAM.Geometry.Planar.Point2D? point2D);
 ```
 #### Parameters
 
@@ -69,7 +69,7 @@ A new [DiGi\.Geometry\.Planar\.Classes\.Point2D](https://learn.microsoft.com/en-
 Converts a [SAM\.Geometry\.Planar\.Polygon2D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.planar.polygon2d 'SAM\.Geometry\.Planar\.Polygon2D') instance to its corresponding [DiGi\.Geometry\.Planar\.Classes\.Polygon2D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.planar.classes.polygon2d 'DiGi\.Geometry\.Planar\.Classes\.Polygon2D') representation\.
 
 ```csharp
-public static DiGi.Geometry.Planar.Classes.Polygon2D ToDiGi(this SAM.Geometry.Planar.Polygon2D polygon2D);
+public static DiGi.Geometry.Planar.Classes.Polygon2D? ToDiGi(this SAM.Geometry.Planar.Polygon2D? polygon2D);
 ```
 #### Parameters
 
@@ -90,7 +90,7 @@ A new [DiGi\.Geometry\.Planar\.Classes\.Polygon2D](https://learn.microsoft.com/e
 Converts a SAM Vector2D instance to a DiGi Vector2D instance\.
 
 ```csharp
-public static DiGi.Geometry.Planar.Classes.Vector2D ToDiGi(this SAM.Geometry.Planar.Vector2D vector2D);
+public static DiGi.Geometry.Planar.Classes.Vector2D? ToDiGi(this SAM.Geometry.Planar.Vector2D? vector2D);
 ```
 #### Parameters
 
@@ -111,7 +111,7 @@ A new DiGi Vector2D instance containing the same coordinates, or null if the inp
 Converts a DiGi Point2D instance to a SAM Point2D instance\.
 
 ```csharp
-public static SAM.Geometry.Planar.Point2D ToSAM(this DiGi.Geometry.Planar.Classes.Point2D point2D);
+public static SAM.Geometry.Planar.Point2D? ToSAM(this DiGi.Geometry.Planar.Classes.Point2D? point2D);
 ```
 #### Parameters
 
@@ -132,7 +132,7 @@ A new SAM Point2D instance, or null if the input is null\.
 Converts a [DiGi\.Geometry\.Planar\.Classes\.Polygon2D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.planar.classes.polygon2d 'DiGi\.Geometry\.Planar\.Classes\.Polygon2D') instance to a [SAM\.Geometry\.Planar\.Polygon2D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.planar.polygon2d 'SAM\.Geometry\.Planar\.Polygon2D') instance\.
 
 ```csharp
-public static SAM.Geometry.Planar.Polygon2D ToSAM(this DiGi.Geometry.Planar.Classes.Polygon2D polygon2D);
+public static SAM.Geometry.Planar.Polygon2D? ToSAM(this DiGi.Geometry.Planar.Classes.Polygon2D? polygon2D);
 ```
 #### Parameters
 
@@ -153,7 +153,7 @@ A new [SAM\.Geometry\.Planar\.Polygon2D](https://learn.microsoft.com/en-us/dotne
 Converts a [DiGi\.Geometry\.Planar\.Classes\.PolygonalFace2D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.planar.classes.polygonalface2d 'DiGi\.Geometry\.Planar\.Classes\.PolygonalFace2D') instance to a [SAM\.Geometry\.Planar\.Face2D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.planar.face2d 'SAM\.Geometry\.Planar\.Face2D') instance\.
 
 ```csharp
-public static SAM.Geometry.Planar.Face2D ToSAM(this DiGi.Geometry.Planar.Classes.PolygonalFace2D polygonalFace2D);
+public static SAM.Geometry.Planar.Face2D? ToSAM(this DiGi.Geometry.Planar.Classes.PolygonalFace2D? polygonalFace2D);
 ```
 #### Parameters
 
@@ -174,7 +174,7 @@ The converted [SAM\.Geometry\.Planar\.Face2D](https://learn.microsoft.com/en-us/
 Converts a DiGi\.Geometry\.Planar\.Classes\.Vector2D instance to a SAM\.Geometry\.Planar\.Vector2D instance\.
 
 ```csharp
-public static SAM.Geometry.Planar.Vector2D ToSAM(this DiGi.Geometry.Planar.Classes.Vector2D vector2D);
+public static SAM.Geometry.Planar.Vector2D? ToSAM(this DiGi.Geometry.Planar.Classes.Vector2D? vector2D);
 ```
 #### Parameters
 

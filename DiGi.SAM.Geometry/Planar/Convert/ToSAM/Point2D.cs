@@ -9,7 +9,7 @@ namespace DiGi.SAM.Geometry.Planar
         /// </summary>
         /// <param name="point2D">The source point to convert.</param>
         /// <returns>A new SAM Point2D instance, or null if the input is null.</returns>
-        public static Point2D ToSAM(this DiGi.Geometry.Planar.Classes.Point2D point2D)
+        public static Point2D? ToSAM(this DiGi.Geometry.Planar.Classes.Point2D? point2D)
         {
             if (point2D == null)
             {

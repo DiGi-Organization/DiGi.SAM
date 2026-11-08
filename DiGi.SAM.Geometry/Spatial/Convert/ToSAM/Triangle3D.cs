@@ -9,7 +9,7 @@ namespace DiGi.SAM.Geometry.Spatial
         /// </summary>
         /// <param name="triangle3D">The source triangle to convert.</param>
         /// <returns>A new <see cref="Triangle3D"/> instance converted from the source, or null if the source is null.</returns>
-        public static Triangle3D ToSAM(this DiGi.Geometry.Spatial.Classes.Triangle3D triangle3D)
+        public static Triangle3D? ToSAM(this DiGi.Geometry.Spatial.Classes.Triangle3D? triangle3D)
         {
             if (triangle3D == null)
             {

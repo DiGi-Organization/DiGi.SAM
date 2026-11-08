@@ -21,7 +21,7 @@ Inheritance [System\.Object](https://learn.microsoft.com/en-us/dotnet/api/system
 Converts a [SAM\.Geometry\.Spatial\.Face3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.face3d 'SAM\.Geometry\.Spatial\.Face3D') instance to its corresponding [DiGi\.Geometry\.Spatial\.Classes\.PolygonalFace3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.polygonalface3d 'DiGi\.Geometry\.Spatial\.Classes\.PolygonalFace3D') representation\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.PolygonalFace3D ToDiGi(this SAM.Geometry.Spatial.Face3D face3D);
+public static DiGi.Geometry.Spatial.Classes.PolygonalFace3D? ToDiGi(this SAM.Geometry.Spatial.Face3D? face3D);
 ```
 #### Parameters
 
@@ -42,7 +42,7 @@ A new [DiGi\.Geometry\.Spatial\.Classes\.PolygonalFace3D](https://learn.microsof
 Converts a SAM Plane instance to its corresponding DiGi Plane representation\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.Plane ToDiGi(this SAM.Geometry.Spatial.Plane plane);
+public static DiGi.Geometry.Spatial.Classes.Plane? ToDiGi(this SAM.Geometry.Spatial.Plane? plane);
 ```
 #### Parameters
 
@@ -63,7 +63,7 @@ A new DiGi\.Geometry\.Spatial\.Classes\.Plane instance, or null if the provided 
 Converts a [SAM\.Geometry\.Spatial\.Point3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.point3d 'SAM\.Geometry\.Spatial\.Point3D') instance to a [DiGi\.Geometry\.Spatial\.Classes\.Point3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.point3d 'DiGi\.Geometry\.Spatial\.Classes\.Point3D') instance\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.Point3D ToDiGi(this SAM.Geometry.Spatial.Point3D point3D);
+public static DiGi.Geometry.Spatial.Classes.Point3D? ToDiGi(this SAM.Geometry.Spatial.Point3D? point3D);
 ```
 #### Parameters
 
@@ -84,7 +84,7 @@ A new [DiGi\.Geometry\.Spatial\.Classes\.Point3D](https://learn.microsoft.com/en
 Converts a [SAM\.Geometry\.Spatial\.Polygon3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.polygon3d 'SAM\.Geometry\.Spatial\.Polygon3D') instance to its corresponding DiGi geometry representation\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.Polygon3D ToDiGi(this SAM.Geometry.Spatial.Polygon3D polygon3D);
+public static DiGi.Geometry.Spatial.Classes.Polygon3D? ToDiGi(this SAM.Geometry.Spatial.Polygon3D? polygon3D);
 ```
 #### Parameters
 
@@ -105,7 +105,7 @@ A new [DiGi\.Geometry\.Spatial\.Classes\.Polygon3D](https://learn.microsoft.com/
 Converts a SAM Vector3D instance to a DiGi Geometry Spatial Vector3D instance\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.Vector3D ToDiGi(this SAM.Geometry.Spatial.Vector3D vector3D);
+public static DiGi.Geometry.Spatial.Classes.Vector3D? ToDiGi(this SAM.Geometry.Spatial.Vector3D? vector3D);
 ```
 #### Parameters
 
@@ -126,7 +126,7 @@ A new DiGi Geometry Spatial Vector3D instance, or null if the input is null\.
 Converts a [DiGi\.Geometry\.Spatial\.Classes\.Plane](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.plane 'DiGi\.Geometry\.Spatial\.Classes\.Plane') to a [SAM\.Geometry\.Spatial\.Plane](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.plane 'SAM\.Geometry\.Spatial\.Plane')\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Plane ToSAM(this DiGi.Geometry.Spatial.Classes.Plane plane);
+public static SAM.Geometry.Spatial.Plane? ToSAM(this DiGi.Geometry.Spatial.Classes.Plane? plane);
 ```
 #### Parameters
 
@@ -147,7 +147,7 @@ A new [SAM\.Geometry\.Spatial\.Plane](https://learn.microsoft.com/en-us/dotnet/a
 Converts a DiGi Geometry Point3D instance to a SAM Geometry Point3D instance\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Point3D ToSAM(this DiGi.Geometry.Spatial.Classes.Point3D point3D);
+public static SAM.Geometry.Spatial.Point3D? ToSAM(this DiGi.Geometry.Spatial.Classes.Point3D? point3D);
 ```
 #### Parameters
 
@@ -168,7 +168,7 @@ A new [SAM\.Geometry\.Spatial\.Point3D](https://learn.microsoft.com/en-us/dotnet
 Converts a [DiGi\.Geometry\.Spatial\.Classes\.Polygon3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.polygon3d 'DiGi\.Geometry\.Spatial\.Classes\.Polygon3D') instance to a [SAM\.Geometry\.Spatial\.Polygon3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.polygon3d 'SAM\.Geometry\.Spatial\.Polygon3D') instance\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Polygon3D ToSAM(this DiGi.Geometry.Spatial.Classes.Polygon3D polygon3D);
+public static SAM.Geometry.Spatial.Polygon3D? ToSAM(this DiGi.Geometry.Spatial.Classes.Polygon3D? polygon3D);
 ```
 #### Parameters
 
@@ -189,7 +189,7 @@ A new [SAM\.Geometry\.Spatial\.Polygon3D](https://learn.microsoft.com/en-us/dotn
 Converts a [DiGi\.Geometry\.Spatial\.Classes\.PolygonalFace3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.polygonalface3d 'DiGi\.Geometry\.Spatial\.Classes\.PolygonalFace3D') to a [SAM\.Geometry\.Spatial\.Face3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.face3d 'SAM\.Geometry\.Spatial\.Face3D')\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Face3D ToSAM(this DiGi.Geometry.Spatial.Classes.PolygonalFace3D polygonalFace3D);
+public static SAM.Geometry.Spatial.Face3D? ToSAM(this DiGi.Geometry.Spatial.Classes.PolygonalFace3D? polygonalFace3D);
 ```
 #### Parameters
 
@@ -210,7 +210,7 @@ A new [SAM\.Geometry\.Spatial\.Face3D](https://learn.microsoft.com/en-us/dotnet/
 Converts a [DiGi\.Geometry\.Spatial\.Classes\.Triangle3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.triangle3d 'DiGi\.Geometry\.Spatial\.Classes\.Triangle3D') instance to a [SAM\.Geometry\.Spatial\.Triangle3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.triangle3d 'SAM\.Geometry\.Spatial\.Triangle3D') instance\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Triangle3D ToSAM(this DiGi.Geometry.Spatial.Classes.Triangle3D triangle3D);
+public static SAM.Geometry.Spatial.Triangle3D? ToSAM(this DiGi.Geometry.Spatial.Classes.Triangle3D? triangle3D);
 ```
 #### Parameters
 
@@ -231,7 +231,7 @@ A new [SAM\.Geometry\.Spatial\.Triangle3D](https://learn.microsoft.com/en-us/dot
 Converts a [DiGi\.Geometry\.Spatial\.Classes\.Vector3D](https://learn.microsoft.com/en-us/dotnet/api/digi.geometry.spatial.classes.vector3d 'DiGi\.Geometry\.Spatial\.Classes\.Vector3D') to a [SAM\.Geometry\.Spatial\.Vector3D](https://learn.microsoft.com/en-us/dotnet/api/sam.geometry.spatial.vector3d 'SAM\.Geometry\.Spatial\.Vector3D')\.
 
 ```csharp
-public static SAM.Geometry.Spatial.Vector3D ToSAM(this DiGi.Geometry.Spatial.Classes.Vector3D vector3D);
+public static SAM.Geometry.Spatial.Vector3D? ToSAM(this DiGi.Geometry.Spatial.Classes.Vector3D? vector3D);
 ```
 #### Parameters
 
@@ -252,7 +252,7 @@ A new [SAM\.Geometry\.Spatial\.Vector3D](https://learn.microsoft.com/en-us/dotne
 Converts a SAM Triangle3D instance to a DiGi Geometry Spatial Triangle3D instance\.
 
 ```csharp
-public static DiGi.Geometry.Spatial.Classes.Triangle3D ToSAM(this SAM.Geometry.Spatial.Triangle3D triangle3D);
+public static DiGi.Geometry.Spatial.Classes.Triangle3D? ToSAM(this SAM.Geometry.Spatial.Triangle3D? triangle3D);
 ```
 #### Parameters
 

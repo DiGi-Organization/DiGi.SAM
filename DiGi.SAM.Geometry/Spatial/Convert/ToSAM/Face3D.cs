@@ -10,14 +10,14 @@ namespace DiGi.SAM.Geometry.Spatial
         /// </summary>
         /// <param name="polygonalFace3D">The polygonal face 3D object to convert.</param>
         /// <returns>A new <see cref="Face3D"/> instance, or null if the input is null or its plane cannot be converted.</returns>
-        public static Face3D ToSAM(this DiGi.Geometry.Spatial.Classes.PolygonalFace3D polygonalFace3D)
+        public static Face3D? ToSAM(this DiGi.Geometry.Spatial.Classes.PolygonalFace3D? polygonalFace3D)
         {
             if (polygonalFace3D == null)
             {
                 return null;
             }
 
-            Plane plane = polygonalFace3D.Plane.ToSAM();
+            Plane? plane = polygonalFace3D.Plane.ToSAM();
             if (plane == null)
             {
                 return null;

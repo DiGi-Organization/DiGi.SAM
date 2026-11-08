@@ -9,7 +9,7 @@ namespace DiGi.SAM.Geometry.Spatial
         /// </summary>
         /// <param name="plane">The source plane instance to convert.</param>
         /// <returns>A new <see cref="Plane"/> instance converted from the source, or null if the input is null.</returns>
-        public static Plane ToSAM(this DiGi.Geometry.Spatial.Classes.Plane plane)
+        public static Plane? ToSAM(this DiGi.Geometry.Spatial.Classes.Plane? plane)
         {
             if (plane == null)
             {

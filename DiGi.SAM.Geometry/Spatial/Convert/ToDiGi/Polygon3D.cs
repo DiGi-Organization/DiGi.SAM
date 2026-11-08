@@ -9,20 +9,20 @@ namespace DiGi.SAM.Geometry.Spatial
         /// </summary>
         /// <param name="polygon3D">The source polygon to convert.</param>
         /// <returns>A new <see cref="DiGi.Geometry.Spatial.Classes.Polygon3D"/> object, or null if the input is null or cannot be converted.</returns>
-        public static DiGi.Geometry.Spatial.Classes.Polygon3D ToDiGi(this Polygon3D polygon3D)
+        public static DiGi.Geometry.Spatial.Classes.Polygon3D? ToDiGi(this Polygon3D? polygon3D)
         {
             if (polygon3D == null)
             {
                 return null;
             }
 
-            DiGi.Geometry.Spatial.Classes.Plane plane = polygon3D.GetPlane().ToDiGi();
+            DiGi.Geometry.Spatial.Classes.Plane? plane = polygon3D.GetPlane().ToDiGi();
             if (plane == null)
             {
                 return null;
             }
 
-            return new DiGi.Geometry.Spatial.Classes.Polygon3D(plane, polygon3D.GetPoints().ConvertAll(x => DiGi.Geometry.Spatial.Query.Convert(plane, x?.ToDiGi())));
+            return new DiGi.Geometry.Spatial.Classes.Polygon3D(plane, polygon3D.GetPoints().ConvertAll<DiGi.Geometry.Planar.Classes.Point2D>(x => DiGi.Geometry.Spatial.Query.Convert(plane, x?.ToDiGi())!));
         }
     }
 }

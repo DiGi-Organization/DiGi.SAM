@@ -10,9 +10,9 @@ namespace DiGi.SAM.Geometry.Planar
         /// </summary>
         /// <param name="polygon2D">The source polygon to be converted.</param>
         /// <returns>A new <see cref="DiGi.Geometry.Planar.Classes.Polygon2D"/> instance if the input is valid; otherwise, null.</returns>
-        public static DiGi.Geometry.Planar.Classes.Polygon2D ToDiGi(this Polygon2D polygon2D)
+        public static DiGi.Geometry.Planar.Classes.Polygon2D? ToDiGi(this Polygon2D? polygon2D)
         {
-            List<DiGi.Geometry.Planar.Classes.Point2D> point2Ds = polygon2D?.GetPoints()?.ConvertAll(x => x.ToDiGi());
+            List<DiGi.Geometry.Planar.Classes.Point2D>? point2Ds = polygon2D?.GetPoints()?.ConvertAll<DiGi.Geometry.Planar.Classes.Point2D>(x => x.ToDiGi()!);
             if (point2Ds == null)
             {
                 return null;
